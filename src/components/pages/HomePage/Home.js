@@ -1,7 +1,7 @@
 import React from 'react';
 import "./home.css";
 import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
+// import * as AiIcons from "react-icons/ai";
 class Bar extends React.Component{
 
 
