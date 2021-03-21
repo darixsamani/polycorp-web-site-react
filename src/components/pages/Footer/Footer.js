@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 //   FaTwitter,
 //   FaLinkedin
 // } from 'react-icons/fa';
-import Logo from '../../logo_hancock.png';
+import Logo from '../../logo_hancock.jpg';
 
 function Footer() {
   return (
@@ -37,22 +37,22 @@ function Footer() {
             <Link to='/'>Agency</Link>
             <Link to='/'>Influencer</Link>
           </div>
-          {/*<div className='footer-link-items'>
+          <div className='footer-link-items'>
             <h2>Social Media</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
             <Link to='/'>Twitter</Link>
-  </div>*/}
+  </div>
       </div>
       <section className='social-media'>
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-            <img alt="logo" className="img-fluid" src={Logo}/>
+            <img alt="logo" className="img-fluid" src={Logo} width ={"100px"} height = {"50px"}/>
             </Link>
           </div>
-          <small className='website-rights'><a href="http://hancock.nucleusoperations.com/projectmanagement/login" target="_blanck">HANCOCK ROOFING</a> © 2020. SITE BY CAMERTRONIX SARL.</small>
+          <small className='website-rights'><a href="http://polycorp.netlify.app" target="_blanck">POLYCORP WEB SITE</a> © 2021. BY SAMANI Darix</small>
          {/* <div className='social-icons'>
             <Link
               className='social-icon-link'
