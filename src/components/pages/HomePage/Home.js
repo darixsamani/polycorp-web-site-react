@@ -2,31 +2,31 @@ import React from 'react';
 import "./home.css";
 import * as FaIcons from "react-icons/fa";
 // import * as AiIcons from "react-icons/ai";
-class Bar extends React.Component{
 
 
-    render(){
+function Bar (){
 
-        return (
-            <span style = {{
+    return (
 
-                width: "150px",
-                backgroundColor: "black",
-                height: "2px",
-                marginBottom: "10px"
-            }}>
+        <span style = {{
 
-            </span>
-        )
-    }
+            width: "150px",
+            backgroundColor: "black",
+            height: "2px",
+            marginBottom: "10px"
+        }}>
+
+        </span>
+
+
+    );
 }
-class Header extends React.Component{
 
+function Header (){
 
-    render(){
-        return(
+    return (
 
-            <div className = "header home">
+        <div className = "header home">
                 <hgroup>
                 <h1>
                     Polyvalent Corporation
@@ -38,51 +38,47 @@ class Header extends React.Component{
                 <Button href="/" name = "En savoir plus" />
 
             </div>
-        )
-    }
 
+    )
 }
 
-class Button extends React.Component{
 
-    render(){
+const Button = function  ({href, name}){
 
-        return(
-            <a href={this.props.href}>
+    return (
+
+        <a href={href}>
                 <button >
-                {this.props.name}
+                {name}
                 </button>
             </a>
 
-        )
-    }
+    )
 }
-class Section extends React.Component{
 
 
-    render(){
+const Section = function ({src, name, description}){
 
-        return(
+    return (
 
-            <div>
-                <img src = {this.props.src} alt = "service"/>
+        <div>
+                <img src = {src} alt = "service"/>
                 <h3>
-                    {this.props.name}
+                    {name}
                 </h3>
                 <p>
-                    {this.props.description}
+                    {description}
                 </p>
             </div>
-        )
-    }
+
+    )
 }
-class Sections extends React.Component{
 
+const Sections = function (){
 
-    render(){
+    return (
 
-        return (
-            <div className = "sections">
+        <div className = "sections">
                 <h2>
                 NOS SERVICES
                 </h2>
@@ -91,107 +87,112 @@ class Sections extends React.Component{
                     Nos disposons d'une equipe qualifiee et l'experience nessaire pour vous aider a integrer les ecoles de vos reves
                 </p>
                 <div className = "section service">
-                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "FORMATION" description = "Faites vous forner par les etudiants des grandes ecoles et facultes du cameroun "/>
-                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "ORIENTATION" description = "Une equipe d'expert disponible 24h /24 qui vous oriente apres l'obtention de votre baccalaureat"/>
-                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "LIVRES" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun"/>
+                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "FORMATION" description = "Faites vous forner par les etudiants des grandes ecoles et facultes du cameroun " key={1}/>
+                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "ORIENTATION" description = "Une equipe d'expert disponible 24h /24 qui vous oriente apres l'obtention de votre baccalaureat0" key={2}/>
+                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "LIVRES" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun" key={3}/>
                 </div>
                 <Button href="/" name = "En savoir plus" />
 
             </div>
             
+
+    );
+}
+
+const Preparation = function ({src, name, description}){
+
+
+    return (
+        <div>
+           <img src={src} alt="service" />
+           <h3>{name}</h3><p>{description}</p>
+       </div> )
+
+}
+
+
+function Preparations (){
+
+    return (
+
+        <div className = "sections preparations">
+        <h2>
+        NOS PREPARATIONS
+        </h2>
+        <Bar />
+        <p className ="sections-des">
+            nos disposons d'une equipe qualifiee et l'experience nessaire pour vous aider a integrer les ecoles de vos reves
+        </p>
+        <div className = "section preparation centre">
+            <div>
+                <Preparation src = "https://placeholder.pics/svg/300x150/EFEFFF-FF4E56/FFFFFF-FFFFFF" name = "INGENIEURIE" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel" key={1}/>
+                <Button href="/" name = "En savoir plus" />
+            </div>
+            <div>
+                <Preparation src = "https://placeholder.pics/svg/300x150/FFA5FF-EF455A/FFFFFF-FFFFFF" name = "MEDECINE" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel" key={2}/>
+                <Button href="/" name = "En savoir plus" />
+            </div>
+            <div>
+                <Preparation src = "https://placeholder.pics/svg/300x150/FFFFFF-FEA456/FFFFFF-FFFFFF" name = "ENSEIGNEMENT" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel" key={3}/>
+                <Button href="/" name = "En savoir plus" />
+            </div>
+            <div>
+                <Preparation src = "https://placeholder.pics/svg/300x150/FFFFFF-126FEF/FFFFFF-FFFFFF" name = "AUTRES PREPAS" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel" key={4}/>
+                <Button href="/" name = "En savoir plus" />
+            </div>
             
-        )
-    }
+        </div>
+        
+
+    </div>
+
+    );
 }
-class Preparation extends Section{
-
-}
-class Preparations extends React.Component{
 
 
-    render(){
+const Equipe = function ({src, name, poste, description, url}){
 
-        return (
-            <div className = "sections preparations">
-                <h2>
-                NOS PREPARATIONS
-                </h2>
-                <Bar />
-                <p className ="sections-des">
-                    nos disposons d'une equipe qualifiee et l'experience nessaire pour vous aider a integrer les ecoles de vos reves
-                </p>
-                <div className = "section preparation centre">
-                    <div>
-                        <Preparation src = "https://placeholder.pics/svg/300x150/EFEFFF-FF4E56/FFFFFF-FFFFFF" name = "INGENIEURIE" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel" />
-                        <Button href="/" name = "En savoir plus" />
-                    </div>
-                    <div>
-                        <Preparation src = "https://placeholder.pics/svg/300x150/FFA5FF-EF455A/FFFFFF-FFFFFF" name = "MEDECINE" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel"/>
-                        <Button href="/" name = "En savoir plus" />
-                    </div>
-                    <div>
-                        <Preparation src = "https://placeholder.pics/svg/300x150/FFFFFF-FEA456/FFFFFF-FFFFFF" name = "ENSEIGNEMENT" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel"/>
-                        <Button href="/" name = "En savoir plus" />
-                    </div>
-                    <div>
-                        <Preparation src = "https://placeholder.pics/svg/300x150/FFFFFF-126FEF/FFFFFF-FFFFFF" name = "AUTRES PREPAS" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel"/>
-                        <Button href="/" name = "En savoir plus" />
-                    </div>
-                    
-                </div>
+    return <>
+
+        <div>
+            <img src = {src} alt = "service"/>
+            <hgroup>
+                <h4>{name}</h4>
+                <h5>{poste}</h5>
+            </hgroup>
+            <p>
+                {description}
+            </p>
+            <p className = "e-social">
+                <a href = {url}>
+                    <FaIcons.FaFacebook />
+                </a>
+                <a href = {url}>
+                    <FaIcons.FaTwitter />
+                </a>
+                <a href = {url}>
+                    <FaIcons.FaLinkedinIn />
+                </a>
+                <a href = {url}>
+                    <FaIcons.FaInstagram />
+                </a>
+                <a href = {url}>
+                    <FaIcons.FaWhatsapp />
+                </a>
                 
 
-            </div>
-            
-            
-        )
-    }
+            </p>
+        </div>
+    </>
+    ;
+
+
 }
-class Equipe extends React.Component{
 
-    render(){
+function Equipes (){
+    return (
 
-        return(
-            <div>
-                <img src = {this.props.src} alt = "service"/>
-                <hgroup>
-                    <h4>{this.props.name}</h4>
-                    <h5>{this.props.poste}</h5>
-                </hgroup>
-                <p>
-                    {this.props.description}
-                </p>
-                <p className = "e-social">
-                    <a href = {this.props.url}>
-                        <FaIcons.FaFacebook />
-                    </a>
-                    <a href = {this.props.url}>
-                        <FaIcons.FaTwitter />
-                    </a>
-                    <a href = {this.props.url}>
-                        <FaIcons.FaLinkedinIn />
-                    </a>
-                    <a href = {this.props.url}>
-                        <FaIcons.FaInstagram />
-                    </a>
-                    <a href = {this.props.url}>
-                        <FaIcons.FaWhatsapp />
-                    </a>
-                    
-
-                </p>
-            </div>
-
-        )
-    }
-}
-class Equipes extends React.Component{
-
-
-    render(){
-
-        return (
-            <div className = "sections">
+        <div className = "sections">
                 <h2>
                 NOTRE EQUIPE
                 </h2>
@@ -200,25 +201,23 @@ class Equipes extends React.Component{
                     Nos disposons d'une equipe qualifiee et l'experience nessaire pour vous aider a integrer les ecoles de vos reves
                 </p>
                 <div className = "section service equipe">
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "PROMOETEUR" description = "Faites vous forner par les etudiants des grandes ecoles et facultes du cameroun " name = "TIEUGUE KANA Evariste"/>
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "VICE PROMOTEUR" description = "Une equipe d'expert disponible 24h /24 qui vous oriente apres l'obtention de votre baccalaureat" name = "DONFACK SIEWE Elton"/>
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "PRESIDENT" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun" name = "POUAHA NZAMAFFO"/>
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "INFORMATICIEN" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun"name = "SAMANI SIEWE DARIX"/>
+                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "PROMOETEUR" description = "Faites vous forner par les etudiants des grandes ecoles et facultes du cameroun " name = "TIEUGUE KANA Evariste" key={1}/>
+                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "VICE PROMOTEUR" description = "Une equipe d'expert disponible 24h /24 qui vous oriente apres l'obtention de votre baccalaureat" name = "DONFACK SIEWE Elton" key={2}/>
+                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "PRESIDENT" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun" name = "POUAHA NZAMAFFO" key={3}/>
+                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "INFORMATICIEN" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun"name = "SAMANI SIEWE DARIX" key={4}/>
                 </div>
                 {/* <Button href="/" name = "En savoir plus" /> */}
 
             </div>
-            
-            
-        )
-    }
+
+    )
 }
 
-class Contact extends React.Component{
 
-    render(){
+function Contact (){
 
-        return (
+    return (
+        
             <div className = "sections">
                 <h2>
                     CONTACTEZ-NOUS
@@ -254,28 +253,27 @@ class Contact extends React.Component{
                 </div>
 
             </div>
-        )
-    }
+        
+
+
+    );
+
 }
-class Home extends React.Component{
 
 
+function Home(){
 
-    render(){
+    return (
 
-
-        return (
-
-            <div>
+        <div>
                 <Header />
                 <Sections />
                 <Preparations />
                 <Equipes />
                 <Contact />
             </div>
-            
-        )
-    }
+
+    ) ;
 }
 
 export default Home;
