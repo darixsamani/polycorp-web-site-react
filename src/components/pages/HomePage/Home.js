@@ -32,7 +32,7 @@ function Header (){
                     Polyvalent Corporation
                 </h1>
                 <h2>
-                    Centre de formation et de preparation aux concours
+                Centre de formation et de préparation aux concours
                 </h2>         
                 </hgroup>
                 <Button href="/" name = "En savoir plus" />
@@ -84,7 +84,7 @@ const Sections = function (){
                 </h2>
                 <Bar />
                 <p className ="sections-des">
-                    Nos disposons d'une equipe qualifiee et l'experience nessaire pour vous aider a integrer les ecoles de vos reves
+                Nous disposons d'une équipe qualifiée et l’expérience nécessaire pour vous aider à intégrer les écoles de vos rêves
                 </p>
                 <div className = "section service">
                     <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "FORMATION" description = "Faites vous forner par les etudiants des grandes ecoles et facultes du cameroun " key={1}/>
@@ -121,23 +121,23 @@ function Preparations (){
         </h2>
         <Bar />
         <p className ="sections-des">
-            nos disposons d'une equipe qualifiee et l'experience nessaire pour vous aider a integrer les ecoles de vos reves
+        Nous disposons d'une équipe qualifiée et l’expérience nécessaire pour vous aider à intégrer les écoles de vos rêves
         </p>
         <div className = "section preparation centre">
             <div>
-                <Preparation src = "https://placeholder.pics/svg/300x150/EFEFFF-FF4E56/FFFFFF-FFFFFF" name = "INGENIEURIE" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel" key={1}/>
+                <Preparation src = "https://placeholder.pics/svg/300x150/EFEFFF-FF4E56/FFFFFF-FFFFFF" name = "INGENIEURIE" description ="Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise" key={1}/>
                 <Button href="/" name = "En savoir plus" />
             </div>
             <div>
-                <Preparation src = "https://placeholder.pics/svg/300x150/FFA5FF-EF455A/FFFFFF-FFFFFF" name = "MEDECINE" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel" key={2}/>
+                <Preparation src = "https://placeholder.pics/svg/300x150/FFA5FF-EF455A/FFFFFF-FFFFFF" name = "MEDECINE" description ="Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise" key={2}/>
                 <Button href="/" name = "En savoir plus" />
             </div>
             <div>
-                <Preparation src = "https://placeholder.pics/svg/300x150/FFFFFF-FEA456/FFFFFF-FFFFFF" name = "ENSEIGNEMENT" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel" key={3}/>
+                <Preparation src = "https://placeholder.pics/svg/300x150/FFFFFF-FEA456/FFFFFF-FFFFFF" name = "ENSEIGNEMENT" description ="Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise" key={3}/>
                 <Button href="/" name = "En savoir plus" />
             </div>
             <div>
-                <Preparation src = "https://placeholder.pics/svg/300x150/FFFFFF-126FEF/FFFFFF-FFFFFF" name = "AUTRES PREPAS" description ="Obtenez les outils necessaire pour integres les grandes ecoles du cameroun grace a une formations complete et une survie personnel" key={4}/>
+                <Preparation src = "https://placeholder.pics/svg/300x150/FFFFFF-126FEF/FFFFFF-FFFFFF" name = "AUTRES PREPAS" description ="Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise" key={4}/>
                 <Button href="/" name = "En savoir plus" />
             </div>
             
@@ -198,13 +198,13 @@ function Equipes (){
                 </h2>
                 <Bar />
                 <p className ="sections-des">
-                    Nos disposons d'une equipe qualifiee et l'experience nessaire pour vous aider a integrer les ecoles de vos reves
+                   Nous disposons d'une équipe qualifiée et l'expérience nécessaire pour vous aider à intégrer les écoles de vos rêves
                 </p>
                 <div className = "section service equipe">
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "PROMOETEUR" description = "Faites vous forner par les etudiants des grandes ecoles et facultes du cameroun " name = "TIEUGUE KANA Evariste" key={1}/>
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "VICE PROMOTEUR" description = "Une equipe d'expert disponible 24h /24 qui vous oriente apres l'obtention de votre baccalaureat" name = "DONFACK SIEWE Elton" key={2}/>
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "PRESIDENT" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun" name = "POUAHA NZAMAFFO" key={3}/>
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "INFORMATICIEN" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun"name = "SAMANI SIEWE DARIX" key={4}/>
+                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "PROMOETEUR" description = "Faites-vous former par les étudiants des grandes écoles et facultés du Cameroun" name = "TIEUGUE KANA Evariste" key={1}/>
+                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "VICE PROMOTEUR" description = "Une équipe d'experts disponible 24h /24 qui vous oriente après l'obtention de votre baccalauréat" name = "DONFACK SIEWE Elton" key={2}/>
+                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "PRESIDENT" description = "Obtenez les meilleurs livres de preparation aux concours et facultés du Cameroun" name = "POUAHA NZAMAFFO" key={3}/>
+                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "INFORMATICIEN" description = "Obtenez les meilleurs livres de preparation aux concours et facultés du Cameroun"name = "SAMANI SIEWE DARIX" key={4}/>
                 </div>
                 {/* <Button href="/" name = "En savoir plus" /> */}
 
@@ -271,7 +271,7 @@ function Home(){
                 <Preparations />
                 <Equipes />
                 <Contact />
-            </div>
+        </div>
 
     ) ;
 }
