@@ -1,16 +1,16 @@
 import React from 'react';
 
-class About extends React.Component{
 
 
-    render(){
 
-        return (
-            <p>
-                Page About pas encore realise
-            </p>
-        )
-    }
+function About (){
+
+
+    return (
+        <p>
+            Page About
+        </p>
+    )
 }
 
 export default About;
