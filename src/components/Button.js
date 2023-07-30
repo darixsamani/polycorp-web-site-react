@@ -7,14 +7,7 @@ const SIZES = ['btn--medium', 'btn--large', 'btn--mobile', 'btn--wide'];
 
 const COLOR = ['primary', 'blue', 'red', 'green'];
 
-export const Button = ({
-  children,
-  type,
-  onClick,
-  buttonStyle,
-  buttonSize,
-  buttonColor
-}) => {
+export const Button = ({children,type,onClick,buttonStyle,buttonSize,buttonColor}) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];

@@ -116,6 +116,7 @@ button{
     font-size: 1.07rem;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    text-align: center;
 }
 .equipe p{
     text-align: left;
