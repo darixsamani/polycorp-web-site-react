@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./home.css";
 import * as FaIcons from "react-icons/fa";
 // import * as AiIcons from "react-icons/ai";
@@ -87,7 +87,7 @@ const Sections = function (){
                 Nous disposons d'une équipe qualifiée et l’expérience nécessaire pour vous aider à intégrer les écoles de vos rêves
                 </p>
                 <div className = "section service">
-                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "FORMATION" description = "Faites vous forner par les etudiants des grandes ecoles et facultes du cameroun " key={1}/>
+                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "FORMATION" description = "Faites vous former par les etudiants des grandes ecoles et facultes du cameroun " key={1}/>
                     <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "ORIENTATION" description = "Une equipe d'expert disponible 24h /24 qui vous oriente apres l'obtention de votre baccalaureat0" key={2}/>
                     <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "LIVRES" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun" key={3}/>
                 </div>
