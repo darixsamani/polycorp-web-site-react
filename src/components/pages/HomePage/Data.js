@@ -82,7 +82,7 @@ export const homeObjOne = {
     }
   ]
 
-  export const SECTION = [
+  export const SERVICES = [
     {
       "src": "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF",
       "name": "FORMATION",
@@ -99,5 +99,35 @@ export const homeObjOne = {
       "src": "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF",
       "name": "LIVRES",
       "description": "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun"
+    }
+  ]
+
+  export const EQUIPES = [
+    {
+      "src": "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF",
+      "poste": "PROMOETEUR",
+      "description": "Faites-vous former par les étudiants des grandes écoles et facultés du Cameroun",
+      "name": "TIEUGUE KANA Evariste",
+    },
+    
+    {
+      "src": "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF",
+      "poste": "VICE PROMOTEUR",
+      "description": "Une équipe d'experts disponible 24h /24 qui vous oriente après l'obtention de votre baccalauréat",
+      "name": "DONFACK SIEWE Elton",
+    },
+    
+    {
+      "src": "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF",
+      "poste": "PRESIDENT",
+      "description": "Obtenez les meilleurs livres de preparation aux concours et facultés du Cameroun",
+      "name": "POUAHA NZAMAFFO",
+    },
+    
+    {
+      "src": "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF",
+      "poste": "RESPONSAVLE DU SERVICE INFORMATIQUE",
+      "description": "Obtenez les meilleurs livres de preparation aux concours et facultés du Cameroun",
+      "name": "SAMANI SIEWE DARIX",
     }
   ]

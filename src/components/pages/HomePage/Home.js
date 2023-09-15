@@ -2,7 +2,7 @@ import React from 'react';
 import "./home.css";
 import * as FaIcons from "react-icons/fa";
 // import * as AiIcons from "react-icons/ai";
-import { PREPARATIONS , SECTION} from './Data';
+import { EQUIPES, PREPARATIONS , SERVICES} from './Data';
 
 
 function Bar (){
@@ -89,7 +89,7 @@ const Sections = function (){
                 </p>
                 <div className = "section service">
                     {
-                        SECTION.map((elm, index) => {
+                        SERVICES.map((elm, index) => {
                             return (
                                 <Section src = {elm["src"]} name = {elm["name"]} description = {elm["description"]} key={index}/>
 
@@ -97,9 +97,6 @@ const Sections = function (){
                         })
                         
                     }
-                   
-                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "ORIENTATION" description = "Une equipe d'expert disponible 24h /24 qui vous oriente apres l'obtention de votre baccalaureat0" key={2}/>
-                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "LIVRES" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun" key={3}/>
                 </div>
                 <Button href="/" name = "En savoir plus" />
 
@@ -206,10 +203,13 @@ function Equipes (){
                    Nous disposons d'une équipe qualifiée et l'expérience nécessaire pour vous aider à intégrer les écoles de vos rêves
                 </p>
                 <div className = "section service equipe">
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "PROMOETEUR" description = "Faites-vous former par les étudiants des grandes écoles et facultés du Cameroun" name = "TIEUGUE KANA Evariste" key={1}/>
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "VICE PROMOTEUR" description = "Une équipe d'experts disponible 24h /24 qui vous oriente après l'obtention de votre baccalauréat" name = "DONFACK SIEWE Elton" key={2}/>
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "PRESIDENT" description = "Obtenez les meilleurs livres de preparation aux concours et facultés du Cameroun" name = "POUAHA NZAMAFFO" key={3}/>
-                    <Equipe src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" poste = "INFORMATICIEN" description = "Obtenez les meilleurs livres de preparation aux concours et facultés du Cameroun"name = "SAMANI SIEWE DARIX" key={4}/>
+                    {
+                        EQUIPES.map((elm, index)=> {
+                            return (
+                                <Equipe src = {elm["src"]} poste = {elm["poste"]} description = {elm["description"]} name = {elm["name"]} key={index}/>
+                            )
+                        })
+                    }
                 </div>
                 {/* <Button href="/" name = "En savoir plus" /> */}
 
