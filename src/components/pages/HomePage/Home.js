@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import "./home.css";
 import * as FaIcons from "react-icons/fa";
 // import * as AiIcons from "react-icons/ai";
+import { PREPARATIONS , SECTION} from './Data';
 
 
 function Bar (){
@@ -87,7 +88,16 @@ const Sections = function (){
                 Nous disposons d'une équipe qualifiée et l’expérience nécessaire pour vous aider à intégrer les écoles de vos rêves
                 </p>
                 <div className = "section service">
-                    <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "FORMATION" description = "Faites vous former par les etudiants des grandes ecoles et facultes du cameroun " key={1}/>
+                    {
+                        SECTION.map((elm, index) => {
+                            return (
+                                <Section src = {elm["src"]} name = {elm["name"]} description = {elm["description"]} key={index}/>
+
+                            )
+                        })
+                        
+                    }
+                   
                     <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "ORIENTATION" description = "Une equipe d'expert disponible 24h /24 qui vous oriente apres l'obtention de votre baccalaureat0" key={2}/>
                     <Section src = "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF" name = "LIVRES" description = "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun" key={3}/>
                 </div>
@@ -124,23 +134,18 @@ function Preparations (){
         Nous disposons d'une équipe qualifiée et l’expérience nécessaire pour vous aider à intégrer les écoles de vos rêves
         </p>
         <div className = "section preparation centre">
-            <div>
-                <Preparation src = "https://placeholder.pics/svg/300x150/EFEFFF-FF4E56/FFFFFF-FFFFFF" name = "INGENIEURIE" description ="Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise" key={1}/>
-                <Button href="/" name = "En savoir plus" />
-            </div>
-            <div>
-                <Preparation src = "https://placeholder.pics/svg/300x150/FFA5FF-EF455A/FFFFFF-FFFFFF" name = "MEDECINE" description ="Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise" key={2}/>
-                <Button href="/" name = "En savoir plus" />
-            </div>
-            <div>
-                <Preparation src = "https://placeholder.pics/svg/300x150/FFFFFF-FEA456/FFFFFF-FFFFFF" name = "ENSEIGNEMENT" description ="Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise" key={3}/>
-                <Button href="/" name = "En savoir plus" />
-            </div>
-            <div>
-                <Preparation src = "https://placeholder.pics/svg/300x150/FFFFFF-126FEF/FFFFFF-FFFFFF" name = "AUTRES PREPAS" description ="Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise" key={4}/>
-                <Button href="/" name = "En savoir plus" />
-            </div>
-            
+            {
+                PREPARATIONS.map((elm, index) => {
+                    return (
+
+                        <div>
+                        <Preparation src = {elm["src"]} description={elm["description"]} key={index}/>
+                        <Button href="/" name = "En savoir plus" />   <Button href="/" name = "En savoir plus" />
+                        </div>
+
+                    );
+                })
+            }
         </div>
         
 

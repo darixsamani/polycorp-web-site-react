@@ -55,3 +55,49 @@ export const homeObjOne = {
     img: 'images/image_1-truck2x-768x501.png',
     alt: 'Vault'
   };
+
+  export const PREPARATIONS = [
+    {
+      "img": "https://placeholder.pics/svg/300x150/EFEFFF-FF4E56/FFFFFF-FFFFFF",
+      "name": "INGENIEURIE",
+      "description": "Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise"
+    },
+
+    {
+      "img": "https://placeholder.pics/svg/300x150/FFA5FF-EF455A/FFFFFF-FFFFFF",
+      "name": "MEDECINE",
+      "description": "Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise"
+    },
+
+    {
+      "img": "https://placeholder.pics/svg/300x150/FFFFFF-FEA456/FFFFFF-FFFFFF",
+      "name": "ENSEIGNEMENT",
+      "description": "Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise"
+    },
+
+    {
+      "img": "https://placeholder.pics/svg/300x150/FFFFFF-126FEF/FFFFFF-FFFFFF",
+      "name": "AUTRES PREPAS",
+      "description": "Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise"
+    }
+  ]
+
+  export const SECTION = [
+    {
+      "src": "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF",
+      "name": "FORMATION",
+      "description": "Faites vous former par les etudiants des grandes ecoles et facultes du cameroun "
+    },
+
+    {
+      "src": "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF",
+      "name": "ORIENTATION",
+      "description": "Une equipe d'expert disponible 24h /24 qui vous oriente apres l'obtention de votre baccalaureat0"
+    },
+
+    {
+      "src": "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF",
+      "name": "LIVRES",
+      "description": "Obtenez les meilleurs livres de preparation aux concours et facultes du cameroun"
+    }
+  ]
