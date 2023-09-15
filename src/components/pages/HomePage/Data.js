@@ -58,25 +58,25 @@ export const homeObjOne = {
 
   export const PREPARATIONS = [
     {
-      "img": "https://placeholder.pics/svg/300x150/EFEFFF-FF4E56/FFFFFF-FFFFFF",
+      "src": "https://placeholder.pics/svg/300x150/EFEFFF-FF4E56/FFFFFF-FFFFFF",
       "name": "INGENIEURIE",
       "description": "Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise"
     },
 
     {
-      "img": "https://placeholder.pics/svg/300x150/FFA5FF-EF455A/FFFFFF-FFFFFF",
+      "src": "https://placeholder.pics/svg/300x150/FFA5FF-EF455A/FFFFFF-FFFFFF",
       "name": "MEDECINE",
       "description": "Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise"
     },
 
     {
-      "img": "https://placeholder.pics/svg/300x150/FFFFFF-FEA456/FFFFFF-FFFFFF",
+      "src": "https://placeholder.pics/svg/300x150/FFFFFF-FEA456/FFFFFF-FFFFFF",
       "name": "ENSEIGNEMENT",
       "description": "Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise"
     },
 
     {
-      "img": "https://placeholder.pics/svg/300x150/FFFFFF-126FEF/FFFFFF-FFFFFF",
+      "src": "https://placeholder.pics/svg/300x150/FFFFFF-126FEF/FFFFFF-FFFFFF",
       "name": "AUTRES PREPAS",
       "description": "Obtenez les outils nécessaires pour intégrer les grandes écoles du Cameroun grâce à une formation complète et une survie personnalise"
     }
