@@ -137,7 +137,7 @@ function Preparations (){
 
                         <div>
                         <Preparation src = {elm["src"]} description={elm["description"]} key={index}/>
-                        <Button href="/" name = "En savoir plus" />   <Button href="/" name = "En savoir plus" />
+                        <Button href="/" name = "En savoir plus" />
                         </div>
 
                     );
