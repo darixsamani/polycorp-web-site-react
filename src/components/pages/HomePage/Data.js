@@ -126,7 +126,7 @@ export const homeObjOne = {
     
     {
       "src": "https://placeholder.pics/svg/200x200/2C45FF-261DFF/FFFFFF-2035FF",
-      "poste": "RESPONSAVLE DU SERVICE INFORMATIQUE",
+      "poste": "RESPONSABLE DU SERVICE INFORMATIQUE",
       "description": "Obtenez les meilleurs livres de preparation aux concours et facultés du Cameroun",
       "name": "SAMANI SIEWE DARIX",
     }
